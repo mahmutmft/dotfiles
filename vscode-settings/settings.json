@@ -1,0 +1,97 @@
+// settings.json
+{
+    // Core Editor
+    "editor": {
+        "fontFamily": "'Geist Mono', 'Monaspace Radon', 'Fira Code'",
+        "fontSize": 16,
+        "fontWeight": "400",
+        "lineHeight": 32,
+        "fontLigatures": "'ss01'-'ss08', 'calt', 'dlig'",
+        "minimap.enabled": false,
+        "lineNumbers": "off",
+        "cursorBlinking": "solid",
+        "multiCursorModifier": "ctrlCmd",
+        "quickSuggestions": { "strings": true },
+        "formatOnSave": false,
+        "linkedEditing": true,
+        "detectIndentation": false,
+        "tokenColorCustomizations": {
+            "textMateRules": [{
+                "scope": ["comment", "keyword", "storage.type", "variable.language"],
+                "settings": { "fontStyle": "" }
+            }]
+        }
+    },
+
+    // Workbench
+    "workbench": {
+        "colorTheme": "React Theme",
+        "iconTheme": "eq-material-theme-icons-light",
+        "activityBar.location": "top",
+        "startupEditor": "none",
+        "statusBar.visible": false,
+        "tree.indent": 15,
+        "editor.enablePreview": false
+    },
+
+    // Files
+    "files": {
+        "autoSave": "afterDelay",
+        "insertFinalNewline": true,
+        "trimFinalNewlines": true,
+        "trimTrailingWhitespace": true,
+        "associations": {
+            ".php_cs*": "php"
+        }
+    },
+
+    // Formatting
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features",
+        "editor.formatOnSave": true
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features",
+        "editor.formatOnSave": true
+    },
+    // ... other formatters ...
+
+    // Extensions
+    "emmet.includeLanguages": {
+        "blade": "html",
+        "vue*": "html",
+        "react": "html"
+    },
+    "material-icon-theme": {
+        "saturation": 0,
+        "files.color": "#42a5f5"
+    },
+    "tailwindCSS.includeLanguages": {
+        "plaintext": "html"
+    },
+
+    // Advanced
+    "diffEditor": {
+        "ignoreTrimWhitespace": false,
+        "renderSideBySide": false,
+        "wordWrap": "on"
+    },
+    "git.decorations.enabled": false,
+    "scm.diffDecorations": "none",
+    "search": {
+        "useIgnoreFiles": false,
+        "exclude": {
+            "**/vendor/{[^l],?[^ai]}*": true,
+            "**/public/{[^i],?[^n]}*": true,
+            "**/node_modules": true,
+            "**/dist": true,
+            "**/_ide_helper.php": true
+        }
+    },
+    "workbench.activityBar.location": "top",
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "editor.stickyScroll.enabled": false,
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": false
+}

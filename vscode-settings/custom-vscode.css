@@ -1,0 +1,79 @@
+/* vscode-custom.css */
+:root {
+    --code-font: 'Monaspace Radon', monospace;
+    --ui-font: 'Geist Mono', monospace;
+    --accent: #bc9abc;
+    --primary: #008c7d;
+    --surface: #2a2b38;
+}
+
+/* Editor Enhancements */
+.mtk3 {
+    font-family: var(--code-font);
+    color: var(--primary) !important;
+}
+
+.monaco-editor {
+    .scroll-decoration {
+        box-shadow: 0 0 20px rgba(0,0,0,.75) !important;
+        top: -6px;
+    }
+
+    .line-numbers {
+        font: 16px var(--ui-font);
+        opacity: .3;
+        width: 35px !important;
+    }
+}
+
+/* Sidebar Styling */
+.part.sidebar {
+    box-shadow: 0 0 50px rgba(0,0,0,.25);
+
+    .monaco-list-row.selected {
+        background: #4f5971 !important;
+        border: 1px solid #727b90;
+
+        + .monaco-list-row { border-top-color: transparent !important; }
+    }
+}
+
+/* UI Components */
+.composite.title {
+    display: flex !important;
+    align-items: center;
+
+    h2 {
+        font: bold 12px var(--ui-font) !important;
+        text-transform: uppercase;
+        color: var(--accent);
+
+        &::before {
+            content: '🚀';
+            margin-right: .5rem;
+        }
+    }
+}
+
+.quick-input-widget {
+    transform: translateY(-50%) !important;
+    padding: 1rem !important;
+    background: linear-gradient(#3c3c50, #2a2b38) !important;
+    border-radius: 1.25rem !important;
+    box-shadow: 0 8px 32px rgba(0,0,0,.45) !important;
+
+    .monaco-inputbox {
+        background: rgba(34,34,34,.4) !important;
+        border-radius: .75rem !important;
+        padding: .5rem !important;
+    }
+}
+
+/* Performance Optimizations */
+.monaco-workbench {
+    .part.editor > .content .editor-group-container > .title .editor-actions,
+    .part.sidebar .title-actions,
+    .titlebar-right > * {
+        display: none !important;
+    }
+}
