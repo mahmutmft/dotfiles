@@ -1,0 +1,11 @@
+# Ignore Neovim plugin files
+nvim/lazy-lock.json
+nvim/plugin/
+nvim/pack/
+
+# Ignore Neovim swap files
+*.swp
+*.swo
+
+# Ignore local overrides
+nvim/local.lua
